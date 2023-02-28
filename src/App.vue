@@ -34,6 +34,10 @@ components:{
   </header>
 
   <main>
+    <div class="visualiseTableData">
+      <p>{{ dynamicTableData.headers }}</p>
+      <p>{{ dynamicTableData.cellsData }}</p>
+    </div>
     <DynamicTable :tableData="dynamicTableData"/>
   </main>
 </template>

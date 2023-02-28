@@ -54,9 +54,10 @@ export default {
     addColumn() {
       this.tableData.headersCount += 1;
       this.tableData.headers.push("Header");
-      let cycleRange = this.tableData.headersCount;
-      cycleRange += 1;
+      let cycleRange = this.tableData.rowsCount;
+      
       for (let i = 0; i < cycleRange; i++) {
+        console.log('added');
         this.tableData.cellsData[i].push("Cell");
       }
     },
